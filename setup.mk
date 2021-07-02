@@ -95,7 +95,7 @@ setup-master:
 
 .PHONY: setup-default-branch
 setup-default-branch: setup-files README.md setup-gitignore
-	git $(CI_AUTHOR) commit -m "Setup repository for $(firstword $(drafts)) using https://github.com/martinthomson/i-d-template"
+	git $(CI_AUTHOR) commit -m "Setup repository for $(firstword $(drafts)) using https://github.com/dwaite/i-d-template"
 
 .PHONY: setup-precommit
 setup-precommit: .git/hooks/pre-commit

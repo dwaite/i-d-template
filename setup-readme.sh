@@ -83,7 +83,7 @@ $ make
 \`\`\`
 
 This requires that you have the necessary software installed.  See
-[the instructions](https://github.com/martinthomson/i-d-template/blob/main/doc/SETUP.md).
+[the instructions](https://github.com/dwaite/i-d-template/blob/main/doc/SETUP.md).
 
 
 ## Contributing
