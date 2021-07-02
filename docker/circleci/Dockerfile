@@ -1,6 +1,6 @@
 ARG REGISTRY=ghcr.io
 ARG VERSION=latest
-FROM ${REGISTRY}/martinthomson/i-d-template-action:${VERSION}
+FROM ${REGISTRY}/dwaite/i-d-template-action:${VERSION}
 
 ENV USER=idci \
     LOGNAME=idci \
@@ -19,7 +19,7 @@ RUN mkdir -p $HOME/.ssh && \
 
 RUN GIT_REFERENCE=$HOME/git-reference; \
     git init -q $GIT_REFERENCE; \
-    git -C $GIT_REFERENCE remote add i-d-template https://github.com/martinthomson/i-d-template; \
+    git -C $GIT_REFERENCE remote add i-d-template https://github.com/dwaite/i-d-template; \
     git -C $GIT_REFERENCE remote add rfc2629xslt https://github.com/reschke/xml2rfc; \
     git -C $GIT_REFERENCE fetch --all
 
